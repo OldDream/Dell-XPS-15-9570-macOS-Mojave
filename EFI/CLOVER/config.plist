@@ -382,7 +382,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>slide=0 darkwake=1 -ngfxbeta npci=0x2000 dart=0 -lilubetaall brcmfx-country=#a agdpmod=vit9696 -v</string>
+		<string>slide=0 darkwake=1 -ngfxbeta npci=0x2000 dart=0 -lilubetaall brcmfx-country=#a agdpmod=vit9696 -v </string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -502,13 +502,17 @@
 			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built-in</string>
-				<key>device-type</key>
-				<string>Network Controller</string>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4353</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
 				<key>model</key>
-				<string>BCM43602 802.11ac Wireless LAN SoC</string>
+				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
+				<key>name</key>
+				<string>Airport</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x0</key>
+			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
 			<dict>
 				<key>compatible</key>
 				<string>pci8086,9cc1</string>
@@ -691,6 +695,10 @@
 		<false/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IO80211Family.kext</string>
+		</array>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
