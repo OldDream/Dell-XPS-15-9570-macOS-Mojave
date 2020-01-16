@@ -1,25 +1,23 @@
-//Add MCHC
-DefinitionBlock ("", "SSDT", 2, "hack", "MCHC", 0)
+//
+// SSDT-MCHC.dsl
+//
+// Dell XPS 15 9560 
+//
+// This SSDT adds the missing Memory (DRAM) Controller to the system.
+//
+// Credit to syscl:
+// https://github.com/syscl/XPS9350-macOS
+//
+
+DefinitionBlock("", "SSDT", 2, "hack", "MCHC", 0)
 {
-    External (_SB_.PCI0, DeviceObj)
+    External(_SB.PCI0, DeviceObj)
 
-    Scope (_SB.PCI0)
+    Scope(_SB.PCI0)
     {
-        Device (MCHC)
-        {
-            Name (_ADR, Zero)
-            Method (_STA, 0, NotSerialized)
-            {
-                If (_OSI ("Darwin"))
-                {
-                    Return (0x0F)
-                }
-                Else
-                {
-                    Return (Zero)
-                }
-            }
-        }
-    }
+		Device (MCHC)
+		{
+		    Name (_ADR, Zero)
+		}
+	}
 }
-
