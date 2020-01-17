@@ -2,6 +2,10 @@
 
 
 
+Tested in 10.14.6
+
+This opencore setting only compatable with APFS sys partition! if u need HFS, add HFSLoader yourself.
+
 Clover setting is based on [LuletterSoul's](https://github.com/LuletterSoul/Dell-XPS-15-9570-macOS-Mojave) repository,  OpenCore is based on [bavariancake's](https://github.com/bavariancake/XPS9570-macOS).
 
 
