@@ -25,8 +25,9 @@ Wifi adapter has been replaced with DW1820A.
 Touchscreen is blocked in SSDT-I2C.
 
 
-Everything works well，except FingerPrint and cardreader。
-please follow [bavariancake's](https://github.com/bavariancake/XPS9570-macOS) instruction to install MacOs。
+Everything works well，except FingerPrint and cardreader.
+
+please follow [bavariancake's](https://github.com/bavariancake/XPS9570-macOS) instruction to install MacOS。
 
 
 
