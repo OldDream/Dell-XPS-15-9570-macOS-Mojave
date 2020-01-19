@@ -1131,7 +1131,7 @@
 				<key>boot-args</key>
 				<string>-v slide=0 npci=0x2000 dart=0 darkwake=1 agdpmod=vit9696 brcmfx-country=#a </string>
 				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
 			</dict>
