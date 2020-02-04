@@ -18,7 +18,7 @@ i7 8750h
 
 Hynix 1T NVME SSD
 
-4K inner display and one 1080p display through HDMI port or Type-C to DP cable.
+4K inner display and two 1080p display through HDMI port + Type-C to DP cable.
 
 Wifi adapter has been replaced with DW1820A.
 
